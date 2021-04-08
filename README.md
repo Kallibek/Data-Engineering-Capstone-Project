@@ -1,5 +1,5 @@
 # Udacity Data Engineering Nanodegree Capstone Project
-Topic: Data Engineering for Vehicle Collisions ans Weather Analytics.
+Topic: Data Engineering for Vehicle Collisions and Weather Analytics.
 
 by Kallibek Kazbekov
 
