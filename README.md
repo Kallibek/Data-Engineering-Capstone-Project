@@ -1,5 +1,5 @@
 # Udacity Data Engineering Nanodegree Capstone Project
-# Topic: Data Engineering for Vehicle Collisions ans Weather Analytics.
+Topic: Data Engineering for Vehicle Collisions ans Weather Analytics.
 
 by Kallibek Kazbekov
 
@@ -19,6 +19,11 @@ Tools used: Airflow, PySpark, S3.
 ## Data Collection and ETL
 
 The data collection and ETL was chosen to be orchestrated by Airflow because it is an open-source tool that offers many flexibilities. In the project, Airflow triggers a code run every day at 7am. 
+
+ETL steps are coded in jupyter notebook and run on an EMR nluster. EMR can be easy scaled even in case of 100-fold increase in data amount or processing load. 
+
+At every DAG execution final results (tables) are loaded into the project S3 bucket so that many people can access simultaneously.
+
 
 ![Alt text](airflow_dag.png?raw=false "Airflow DAG")
 
