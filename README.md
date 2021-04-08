@@ -20,7 +20,7 @@ Tools used: Airflow, PySpark, S3.
 
 The data collection and ETL was chosen to be orchestrated by Airflow because it is an open-source tool that offers many flexibilities. In the project, Airflow triggers a code run every day at 7am. 
 
-![Alt text](airflow_dag.png?raw=true "Airflow DAG")
+![Alt text](airflow_dag.png?raw=false "Airflow DAG")
 
 # Data Collection
 
@@ -53,7 +53,7 @@ Here, Spark:
 2. makes a separate table called Time table by extracting datetime from collisions table and also extracting elements like year, day, hour from the datetime;
 3. reshapes weather data to be in tidy format.
 
-![Alt text](relational_diagram.png?raw=true "Data Model")
+![Alt text](relational_diagram.png?raw=false "Data Model")
 
 
 ## Step 3: Join dataframes for analytics
@@ -64,7 +64,7 @@ During this step, daily summary of collisions and daily weather data are inner-j
 
 Finally, the Spark writes generated and transformed dataframes to parquet and csv files in S3 bucket. 
 
-![Alt text](data_collection_and_etl.png?raw=true "Data collection and ETL")
+![Alt text](data_collection_and_etl.png?raw=false "Data collection and ETL")
 
 # Project instructions on how to run the Python scripts
 
