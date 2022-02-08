@@ -12,8 +12,8 @@ unzip awscliv2.zip
 pip install boto3==1.17.45
 
 # set ENV VARs for aws cli
-export AWS_ACCESS_KEY_ID=AKIA3V3HAYPXCLJTCEQZ
-export AWS_SECRET_ACCESS_KEY=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
+export AWS_ACCESS_KEY_ID= 
+export AWS_SECRET_ACCESS_KEY=
 export AWS_DEFAULT_REGION=us-east-1
 
 #pre-launch airflow
